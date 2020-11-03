@@ -1,18 +1,18 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core";
+import { PostModel } from "./post-feed/post.model";
 
 @Component({
-  selector: 'app-news-feed',
-  templateUrl: './news-feed.component.html',
-  styleUrls: ['./news-feed.component.less']
+  selector: "app-news-feed",
+  templateUrl: "./news-feed.component.html",
+  styleUrls: ["./news-feed.component.less"],
 })
 export class NewsFeedComponent implements OnInit {
-
+  
   @Input()
-  public rows: any[];
+  public posts: PostModel[] = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
-
 }
