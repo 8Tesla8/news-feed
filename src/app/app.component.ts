@@ -13,19 +13,19 @@ export class AppComponent {
   ngOnInit(): void {
     this.newsFeedPosts = [
       {
-        profilePhoto: "photo1",
+        profilePhoto: "assets/dog.jpg",
         name: "name1",
         date: "1 hours ago",
         postText: "Text1",
-        postPhoto: "post photo1",
+        postPhoto: "assets/nature.jpg",
         likeCount: 1,
       } as PostModel,
       {
-        profilePhoto: "photo2",
+        profilePhoto: "assets/dog.jpg",
         name: "name2",
         date: "2 hours ago",
         postText: "Text2",
-        postPhoto: "post photo2",
+        postPhoto: null,
         likeCount: 2,
       } as PostModel,
     ];
